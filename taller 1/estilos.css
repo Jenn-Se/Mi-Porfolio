@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(69, 121, 47);
+}
+h1 {
+    color: antiquewhite;
+    background-color: rgb(158, 11, 92);
+}
+h2 {
+    color: aliceblue;
+}
+div {
+    color: antiquewhite;
+    background-color: rgb(88, 40, 124);
+}
+button{ 
+    background-color: rgb(36, 36, 108);
+}

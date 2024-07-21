@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="vecteezy_20269470.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <script>
+        function irAContacto(idContacto) {
+            var contacto = document.getElementById(idContacto);
+            contacto.scrollIntoView({ behavior: "smooth" });
+            var primerCampo = contacto.querySelector('input, textarea');
+            if (primerCampo) {
+                primerCampo.focus();
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav id="menú">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="about.html">Acerca de</a></li>
+            <li><a href="#" onclick="irAContacto('Contacto')">Contáctame</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="logo-container">
+            <img src="vecteezy_20269470.jpg" alt="logo" width="20%">
+        </div>
+        <h1>Paseos místicos</h1>
+    </header>
+
+    <h3>El mejor viaje de tu vida</h3>
+
+    <br>
+
+    <div id="Contacto">
+        <form action="">
+            <fieldset>
+                <legend><h2>Contacto</h2></legend>
+            
+                <label for="Nombre">Nombre:</label><br>
+                <input type="text" id="Nombre" name="Nombre" placeholder="Ingresa aquí tu nombre" required><br>
+
+                <label for="Apellido">Apellidos:</label><br>
+                <input type="text" id="Apellido" name="Apellido" placeholder="Ingresa aquí tu Apellido" required><br>
+
+                <label for="email">Correo:</label><br>
+                <input type="email" id="email" name="email" placeholder="Ingresa aquí tu email" required><br>
+
+                <label for="Mensaje">Mensaje:</label><br>
+                <textarea id="Mensaje" name="Mensaje" placeholder="Ingresa aquí tu mensaje"></textarea><br><br>
+
+                <input type="checkbox" name="casilla">Deseo recibir información sobre novedades y ofertas
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <br><br><br><br><br><br><br>
+
+    <footer>&copy; Jennifer Segovia - 2024</footer>
+</body>
+</html>
