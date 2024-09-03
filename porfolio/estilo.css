@@ -50,3 +50,43 @@ footer {
     background-color: #333;
     color: #fff;
 }
+@media (max-width: 600px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .proyecto {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    .proyecto {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+}
